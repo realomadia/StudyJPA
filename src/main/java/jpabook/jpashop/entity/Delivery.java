@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter @Setter
 public class Delivery {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "deliveery_id")
+    @Column(name = "delivery_id")
     private Long id;
 
     @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY)
